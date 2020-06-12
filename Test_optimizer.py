@@ -36,6 +36,7 @@ for test in range(TOTAL_TESTS):
     stat[test]= process_file("compression.c.gcov."+str(test))
 
 
+
 # list of all lines in all tests:
 all_lines=set()
 # k=line , v=list of tests , which trigger that line:
@@ -51,6 +52,7 @@ for test in stat:
     for line in stat[test]:
         tests_for_line[line]= tests_for_line.get(line , []) + [test]
 
+print(len(all_lines))
 
 #Creating variables for each test case
 tests =[Int('test_%d' % (t)) for t in range(TOTAL_TESTS)]
@@ -105,9 +107,15 @@ print ("****************************************")
 print ("Test cases that lead to maximum coverage:")
 
 # print all variables set to 1:
+tt =[]
 for t in tests:
     if m[t]. as_long ()==1:
         print (t)
+        tt.append(t)
+
+print("total lines in code: 182")
+print("total lines being hit")
+print(len(stat))
 
 
 print ("****************************************")
