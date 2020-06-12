@@ -1,5 +1,15 @@
 # Finding optimum test cases
 
+# Quick compilation
+To run the project:
+1. 'pip install z3-solver'. Make sure the package is correctly installed.
+2. Use python 2.7
+3. Download the compressor.gcov.zip
+4. run Test_optimizer.py
+
+
+# Building and compiling from scratch
+
 To run the project, follow these steps 
 1. Install Python v2.7
 2. in terminal 'pip install z3-solver'
