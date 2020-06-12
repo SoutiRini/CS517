@@ -2,10 +2,10 @@
 
 # Quick compilation
 To run the project:
-1. 'pip install z3-solver'. Make sure the package is correctly installed.
+1. 'pip install z3-solver'. This is the only package we will use.
 2. Use python 2.7
-3. Download the compressor.gcov.zip
-4. run Test_optimizer.py
+3. Download the compressor.zip. This already contains the generated gcov files for the tests.
+4. run Test_optimizer.py inside the folder compressor. 
 
 
 # Building and compiling from scratch
